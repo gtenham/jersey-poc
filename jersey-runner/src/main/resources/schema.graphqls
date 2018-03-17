@@ -1,0 +1,13 @@
+type TodoDTO {
+  id: ID!
+  name: String!
+  isComplete: Boolean!
+}
+
+type Query {
+  getAllTodos: [TodoDTO]
+}
+
+schema {
+  query: Query
+}
